@@ -1,0 +1,18 @@
+class person:
+    def getdata(self,name,age):
+        self.name = name
+        self.age = age
+    def putdata(self):
+        print("name=",self.name)
+        print("age=",self.age)
+
+class employee(person):
+    def getsalary(self,salary):
+        self.salary = salary
+    def putsalary(self):
+        print("salary=",self.salary)
+e = employee()
+e.getdata("aman",29)
+e.getsalary(300000000)
+e.putdata()
+e.putsalary()
